@@ -1,7 +1,10 @@
 // Back-End Logic
 var pingPong = function(number) {
   for (i = 0; i < number + 1; i++); {
-    if (number % 15 === 0) {
+    if (number === 0) {
+      return ("0");
+    }
+    else if (number % 15 === 0) {
       return ("P I N G - P O N G !");
     }
     else if (number % 5 === 0) {
@@ -13,7 +16,7 @@ var pingPong = function(number) {
     else if (number) {
       return number;
     } else {
-      return ("This is not a valid number.")
+      return ("This is not a valid number.");
       clear;
     }
   }
@@ -27,9 +30,7 @@ $(document).ready(function() {
     var result = pingPong(number);
     var clear = $("input#number").val('');
 
-    $("div#results").append("<p class='tlt'>" + result + "</p>");
-      $("div#results").show(function () {
-        $('.tlt').textillate();
-    });
+    $("div#results").append("<p class='animated zoomInLeft'>" + result + "</p>");
+    $("div#results").show();
   });
 });
