@@ -16,11 +16,12 @@ var numberPing = function(number) {
 // User Interface Logic
 $(document).ready(function() {
   $("form#user-number").submit(function(event) {
+          event.preventDefault();
     var number = parseInt($("input#number").val());
     var result = numberPing(number);
 
-    $("ul#results").text(result);
+    $("ul#results").append("<li>" + result + "</li>");
     $("ul#result").show();
-      event.preventDefault();
+
   });
 });
