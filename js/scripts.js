@@ -18,12 +18,15 @@ var pingPong = function(number) {
 // User Interface Logic
 $(document).ready(function() {
   $("form#user-number").submit(function(event) {
-    console.log("test counter");
     event.preventDefault();
     var number = parseInt($("input#number").val());
     var result = pingPong(number);
 
-    $("div#results").append("<p>" + result + "</p>");
-    $("div#results").show();
+    $("div.results").append("<p>" + result + "</p>");
+    $("div.results").show();
   });
+
+  $(function () {
+	$('.tlt').textillate();
+});
 });
