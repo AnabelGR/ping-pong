@@ -26,9 +26,8 @@ $(document).ready(function() {
     var clear = $("input#number").val('');
 
     $("div#results").append("<p class='tlt'>" + result + "</p>");
-    $("div#results").show();
-    $(function () {
-      $('.tlt').textillate();
+      $("div#results").show(function () {
+        $('.tlt').textillate();
     });
   });
 });

@@ -2,20 +2,20 @@ body {
   background-color: #d4c9e0;
 }
 
-p, button, label {
-  font-family: 'Nunito', sans-serif;
-  text-align: center;
-}
-
-p, li, label {
-  font-size: 20px;
-  color: #1639a3;
-}
-
 button {
   background-color: #1639a3;
   color: white;
   font-size: 20px;
+}
+
+button, label, p {
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+}
+
+label, li, p {
+  font-size: 20px;
+  color: #1639a3;
 }
 
 li {
@@ -33,16 +33,12 @@ li {
   text-align: center;
 }
 
-.instructions {
-  text-align: center;
-}
-
 .jumbotron {
   background-color: #1639a3;
   color: white;
-    font-family: 'Nunito', sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
-#results {
-  display: none;
+.side {
+  background-color: #1639a3;
 }
