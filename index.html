@@ -3,11 +3,10 @@
   <head>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,900" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
-
     <title>Ping Pong</title>
   </head>
   <body>
@@ -24,7 +23,7 @@
           </ol>
         </p>
       </div>
-      <div class="formOne">
+      <div class="formInput">
         <form id="user-number">
           <div class="form-group">
             <label for="number">Start playing! Enter a number:</label><br>
@@ -35,14 +34,17 @@
           </p>
         </form>
       </div>
-    <div class="result">
-      <div class="row">
-        <div class="col-md-4 side">
-        </div>
-        <div class="col-md-4"  id="results">
-          <!-- answers append here -->
-        </div>
-        <div class="col-md-4 side">
+      <div class="results">
+        <div class="row">
+          <div class="col-md-4">
+            <p><img src="img/right-facing.png" alt="ping pong silhouette"></p>
+          </div>
+          <div class="col-md-4"  id="results">
+            <!-- answers append here -->
+          </div>
+          <div class="col-md-4">
+            <p><img src="img/left-facing.png" alt="ping pong silhouette"></p>
+          </div>
         </div>
       </div>
     </div>
