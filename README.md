@@ -17,10 +17,12 @@ Specs:<br>
 |  behavior | input  | output  |
 |---|---|---|
 | convert an input string into numbers  | "2"  | 2  |
-| count up to the input number  | 2  | [1,2]]  |
-| The program should return "ping" for numbers divisible by 3 with no remainder | 3 | ["ping"] |
-| The program should return "pong" for numbers divisible by 5 with no remainder | 5 | ["pong"] |
-| The program should return "ping-pong" for numbers divisible by 15 with no remainder | 15 | [ping-pong] |
+| count up to the input number  | 2  | [1, 2]  |
+| The program should return "0" for a "0" input. | 0 | "0" |
+| The program should return an error message for an empty input. | " " | "This is not a valid number." |
+| The program should return "ping" for numbers divisible by 3 with no remainder | 3 | "ping" |
+| The program should return "pong" for numbers divisible by 5 with no remainder | 5 | "pong" |
+| The program should return "ping-pong" for numbers divisible by 15 with no remainder | 15 | "ping-pong" |
 | A user should be able to enter a new number and see new results over and over again | 1, 2, 3 | 1, 2, "ping" |
 
 
