@@ -22,11 +22,11 @@ $(document).ready(function() {
     var number = parseInt($("input#number").val());
     var result = pingPong(number);
 
-    $("div.results").append("<p>" + result + "</p>");
-    $("div.results").show();
+    $("div#results").append("<p>" + result + "</p>");
+    $("div#results").show();
   });
 
   $(function () {
-	$('.tlt').textillate();
-});
+    $('.tlt').textillate();
+  });
 });

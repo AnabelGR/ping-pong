@@ -9,11 +9,11 @@ p, button, label {
 
 p, li, label {
   font-size: 20px;
-  color: #45008e;
+  color: #1639a3;
 }
 
 button {
-  background-color: #45008e;
+  background-color: #1639a3;
   color: white;
   font-size: 20px;
 }
@@ -24,7 +24,7 @@ li {
 }
 
 .active {
-  background-color: #45008e;
+  background-color: #1639a3;
   color: white;
   font-size: 20px;
 }
@@ -38,7 +38,7 @@ li {
 }
 
 .jumbotron {
-  background-color: #45008e;
+  background-color: #1639a3;
   color: white;
     font-family: 'Nunito', sans-serif;
 }
