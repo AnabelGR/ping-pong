@@ -1,11 +1,35 @@
-#result {
-  display: none;
+body {
+
+}
+
+p, h1, button, label {
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+}
+
+p, li, button, label {
+  font-size: 20px;
+  color: #45008e;
 }
 
 li {
   list-style-type: none;
+  font-family: 'Nunito', sans-serif;
+}
+
+.button-p, .form-group, .instructions, #results {
+  text-align: center;
 }
 
 .instructions {
-  list-style-type: disc;
+  text-align: center;
+}
+
+.jumbotron {
+  background-color: #45008e;
+  color: white;
+}
+
+#results {
+  display: none;
 }
