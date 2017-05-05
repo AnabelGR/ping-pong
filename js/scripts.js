@@ -9,7 +9,8 @@ var pingPong = function(number) {
     }
     else if (number % 3 === 0) {
       return ("P I N G !");
-    } else {
+    }
+    else {
       return number;
       clear;
     }
@@ -24,11 +25,10 @@ $(document).ready(function() {
     var result = pingPong(number);
     var clear = $("input#number").val('');
 
-    $("div#results").append("<p>" + result + "</p>");
+    $("div#results").append("<p class='tlt'>" + result + "</p>");
     $("div#results").show();
-  });
-
-  $(function () {
-    $('.tlt').textillate();
+    $(function () {
+      $('.tlt').textillate();
+    });
   });
 });
