@@ -10,8 +10,10 @@ var pingPong = function(number) {
     else if (number % 3 === 0) {
       return ("P I N G !");
     }
-    else {
+    else if (number) {
       return number;
+    } else {
+      return ("This is not a valid number.")
       clear;
     }
   }

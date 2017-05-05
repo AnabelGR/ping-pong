@@ -2,8 +2,8 @@
 <html>
   <head>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="css/animate.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,900" rel="stylesheet">
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/jquery.lettering.js"></script>
@@ -16,36 +16,36 @@
   <body>
     <div class="container">
       <div class="jumbotron" style="background-image: url(http://www.samfordtabletennis.com/wp-content/uploads/2012/01/obrazek-kopie.jpg); background-size: fit">
-          <h1 class="tlt">PING PONG</h1>
+        <h1 class="tlt">PING PONG</h1>
       </div>
-          <p>Ping Pong will count up to your number from 1 with the following exceptions:
-            <ol>
-              <li class="instructions">Numbers divisible by 3 are replaced with "PING."</li>
-              <li class="instructions">Numbers divisible by 5 are replaced with "PONG."</li>
-              <li class="instructions">Numbers divisible by 15 are replaced with "PING-PONG."</li>
-            </ol>
+      <div class="headerText">
+        <p>Ping Pong will count up to your number from 1 with the following exceptions:
+          <ol>
+            <li class="instructions">Numbers divisible by 3 are replaced with "PING."</li>
+            <li class="instructions">Numbers divisible by 5 are replaced with "PONG."</li>
+            <li class="instructions">Numbers divisible by 15 are replaced with "PING-PONG."</li>
+          </ol>
+        </p>
+      </div>
+      <div class="formOne">
+        <form id="user-number">
+          <div class="form-group">
+            <label for="number">Start playing! Enter a number:</label><br>
+            <input id="number" type="number">
+          </div>
+          <p class="button-p">
+            <button type="submit" class="btn btn-primary">PING PONG!</button>
           </p>
+        </form>
       </div>
-      <form id="user-number">
-            <div class="form-group">
-              <label for="number">Start playing! Enter a number:</label><br>
-              <input id="number" type="number">
-            </div>
-            <p class="button-p">
-              <button type="submit" class="btn">PING PONG!</button>
-            </p>
-          </form>
-    </div>
     <div class="result">
       <div class="row">
         <div class="col-md-4 side">
-
         </div>
         <div class="col-md-4"  id="results">
           <!-- answers append here -->
         </div>
         <div class="col-md-4 side">
-
         </div>
       </div>
     </div>
