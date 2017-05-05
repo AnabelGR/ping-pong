@@ -1,6 +1,6 @@
 // Back-End Logic
 var pingPong = function(number) {
-  for (i = 1; i < number + 1; i++); {
+  for (i = 0; i < number + 1; i++); {
     if (number % 15 === 0) {
       return ("P I N G - P O N G !");
     }
@@ -18,11 +18,12 @@ var pingPong = function(number) {
 // User Interface Logic
 $(document).ready(function() {
   $("form#user-number").submit(function(event) {
+    console.log("test counter");
     event.preventDefault();
     var number = parseInt($("input#number").val());
     var result = pingPong(number);
 
-    $("ul#results").append("<li>" + result + "</li>");
-    $("ul#results").show();
+    $("div#results").append("<p>" + result + "</p>");
+    $("div#results").show();
   });
 });
