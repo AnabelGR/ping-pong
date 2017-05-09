@@ -4,18 +4,16 @@ var pingPong = function(number) {
 
   for (var index = 1; index <= number; index += 1) {
     if ((index % 3 === 0) && (index % 5 != 0) && (index % 15 != 0)) {
-      numberArray.push("PING ");
-    } else if ((index % 5 === 0) && (index % 15 != 0) && (index % 3 != 0)){
-      numberArray.push("PONG ");
-    } else if ((index % 15 === 0) && (index % 5 === 0) && (index % 3 === 0)){
-      numberArray.push("PING-PONG ");
+      numberArray.push("PING</br>");
+    } else if ((index % 5 === 0) && (index % 15 != 0)){
+      numberArray.push("PONG </br>");
+    } else if (index % 15 === 0) {
+      numberArray.push("PING-PONG</br>");
     } else
-      numberArray.push(index, " ");
+      numberArray.push(index, "</br>");
   };
     return numberArray;
 }
-
-
 
 // User Interface Logic
 $(document).ready(function() {
@@ -24,8 +22,7 @@ $(document).ready(function() {
       event.preventDefault();
     var number = parseInt($("input#number").val());
     var result = pingPong(number);
-    // var splitResult = result.split(' ');
       $(".addResults").append(result);
-      var clear = $("input#number").val('');
+      $("input#number").val('');
   });
 });
