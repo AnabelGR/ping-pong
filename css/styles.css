@@ -2,7 +2,7 @@ body {
   background-color: #d4c9e0;
 }
 
-button, label, p {
+button, label, li, p {
   font-family: 'Nunito', sans-serif;
   text-align: center;
 }
@@ -14,7 +14,6 @@ label, li, p {
 
 li {
   list-style-type: none;
-  font-family: 'Nunito', sans-serif;
 }
 
 .button-p, .form-group, .instructions, #results {
@@ -27,7 +26,11 @@ li {
   font-family: 'Nunito', sans-serif;
 }
 
-#results {
+.results {
   border: 2px solid #1639a3;
   padding-top: 5px;
+}
+
+#addResults {
+  width: 350px;
 }

@@ -1,35 +1,31 @@
 // Back-End Logic
 var pingPong = function(number) {
-  for (var i = 0; i < number; i+=1);
-    { if (number === 0) {
-        return ("0");
+  var numberArray = [];
+
+  for (var index = 1; index <= number; index += 1) {
+    if ((index % 3 === 0) && (index % 5 != 0) && (index % 15 != 0)) {
+      numberArray.push("PING ");
+    } else if ((index % 5 === 0) && (index % 15 != 0) && (index % 3 != 0)){
+      numberArray.push("PONG ");
+    } else if ((index % 15 === 0) && (index % 5 === 0) && (index % 3 === 0)){
+      numberArray.push("PING-PONG ");
     } else
-        if (number % 15 === 0) {
-        return ("P I N G - P O N G !");
-    } else
-        if (number % 5 === 0) {
-        return ("P O N G !");
-    } else
-        if (number % 3 === 0) {
-        return ("P I N G !");
-    } else
-        if (number) {
-        return number;
-    } else {
-        return ("This is not a valid number.");
-        clear;
-    }
-  }
-};
+      numberArray.push(index, " ");
+  };
+    return numberArray;
+}
+
+
 
 // User Interface Logic
 $(document).ready(function() {
   $("form#user-number").submit(function(event) {
-    debugger;
+    // debugger;
       event.preventDefault();
     var number = parseInt($("input#number").val());
     var result = pingPong(number);
-    var clear = $("input#number").val('');
-      $("div#results").append("<p class='animated bounceInUp'>" + result + "</p>");
+    // var splitResult = result.split(' ');
+      $(".addResults").append(result);
+      var clear = $("input#number").val('');
   });
 });
